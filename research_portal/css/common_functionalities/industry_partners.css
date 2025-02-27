@@ -1,0 +1,107 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Header Content with Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 170px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Logout Menu */
+.logout-menu {
+    margin-left: auto;
+}
+
+.logout-menu button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.logout-menu button:hover {
+    background-color: #cc0000;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Style */
+.card {
+    background: #e6f2ff;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #003366;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 12px;
+    text-decoration: none;
+    background-color: #00509e;
+    color: white;
+    border-radius: 4px;
+}
+
+.card a:hover {
+    background-color: #003366;
+}
+
+/* Links */
+a {
+    color: #00509e;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}

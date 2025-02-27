@@ -1,0 +1,156 @@
+/* Universal styles for body and layout */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes the full height of the viewport */
+    margin: 0;
+}
+
+main {
+    flex: 1; /* Pushes the footer to the bottom when content is short */
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: center; /* Center the title horizontally */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000080; /* Navy blue background color */
+    color: #fff;
+    position: sticky; /* Sticky header at the top */
+    top: 0; /* Ensure it sticks to the top */
+    z-index: 1000; /* Keeps it above other elements */
+    height: 100px; /* Increased height for the header */
+    border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for the header */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    position: absolute; /* Logo aligned to the left */
+    left: 20px; /* Adjust for spacing */
+}
+
+header .logo img {
+    height: 60px; /* Slightly larger logo if needed */
+    border-radius: 10px;
+    margin-right: 15px; /* Space between logo and title */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em; /* Adjust font size to fit the larger header */
+    text-align: center; /* Center the title */
+    flex-grow: 1; /* Ensure title occupies available space */
+}
+
+/* Styling for the Logout button */
+.logout-menu button {
+    background-color: #ff4d4d; /* Bright red background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 20px 30px; /* Add padding for button size */
+    border-radius: 50px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor for buttons */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.logout-menu button:hover {
+    background-color: #ff1a1a; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.logout-menu button:active {
+    transform: scale(0.95); /* Slightly shrink when clicked */
+}
+
+/* Footer styles */
+footer {
+    background-color: #000080; /* Navy blue background color */
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px; /* Add padding for spacing */
+    font-size: 1em; /* Font size for footer text */
+    border-top: 4px solid #003366; /* Darker navy border for separation */
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for a modern look */
+    position: sticky;
+    bottom: 0;
+    width: 100%; /* Ensure it spans the full width */
+}
+
+footer p {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Consistent font style */
+    font-size: 0.9em; /* Slightly smaller text */
+}
+
+footer a {
+    color: #FFD700; /* Highlighted color for links, e.g., gold */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+    color: #fff; /* Change link color to white on hover */
+}
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0047ab;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            position: relative;
+        }
+        .logout-menu {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+        .logout-menu button {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .logout-menu button:hover {
+            background-color: #ff1a1a;
+        }
+        .container {
+            padding: 20px;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            background-color: #eee;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: #0047ab;
+            font-weight: bold;
+        }
+        .menu a:hover {
+            text-decoration: underline;
+        }
+        .card {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }

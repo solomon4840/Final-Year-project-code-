@@ -1,0 +1,258 @@
+/* Universal styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0047ab;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 80px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* UI logo */
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+    width: auto;
+    margin-right: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+header .logout-menu {
+    display: flex;
+    align-items: center;
+}
+
+header .logout-menu button {
+    background-color: #ff4d4d; /* Red color for logout button */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left: 15px;
+}
+
+header .logout-menu button:hover {
+    background-color: #cc0000; /* Darker red */
+    transform: scale(1.05);
+}
+
+header .logout-menu button:active {
+    transform: scale(0.95);
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #0047ab;
+    color: white;
+}
+
+thead th {
+    padding: 15px;
+    text-align: left;
+    font-size: 1em;
+    border-bottom: 2px solid #003366;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+tbody td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Action buttons */
+.action-button {
+    padding: 8px 12px;
+    font-size: 0.9em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Specific button styles */
+.view-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.view-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.edit-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #1e7e34;
+    transform: scale(1.05);
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+.add-project-button {
+    background-color: #17a2b8;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-project-button:hover {
+    background-color: #117a8b;
+    transform: scale(1.05);
+}
+
+.add-project-button:active {
+    transform: scale(0.95);
+}
+
+/* Footer styles */
+footer {
+    background-color: #0047ab;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 1em;
+    border-top: 4px solid #003366;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: white;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+th, td {
+    border: 1px solid #ddd; /* Add borders */
+    padding: 8px; /* Add padding */
+}
+
+th {
+    background-color: #f4f4f4; /* Light gray header */
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternate row colors */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Row hover effect */
+}
+
+.action-button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.view-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.edit-button {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+}

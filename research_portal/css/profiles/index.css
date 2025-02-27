@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #003366; /* University of Ibadan theme color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo img {
+    height: 80px;
+    width: auto;
+}
+
+header h1 {
+    margin: 10px 0 0;
+    font-size: 24px;
+}
+
+/* Main Section Styles */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.button-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.button-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.buttons .login-btn {
+    background-color: #003366;
+    color: white;
+}
+
+.buttons .register-btn {
+    background-color: #ff6600; /* Accent color */
+    color: white;
+}
+
+.buttons a:hover {
+    opacity: 0.9;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

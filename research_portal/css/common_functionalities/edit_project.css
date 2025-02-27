@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header .logo-container img {
+    height: 60px; /* Adjusted height for better visibility */
+    margin-right: 15px;
+}
+
+header span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Styled Logout Button */
+header .logout-menu {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header .logout-menu button {
+    background-color: #ff4d4d; /* Bright red background */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+header .logout-menu button:hover {
+    background-color: #ff1a1a; /* Darker red on hover */
+}
+
+header .logout-menu button:active {
+    transform: scale(0.95); /* Slightly shrink when clicked */
+}
+
+/* Main Content */
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+main form input,
+main form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+main form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+main form button:hover {
+    background-color: #002244;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #003366;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Specific Enhancements for Better Logo Fit */
+header div a img {
+    height: 50px; /* Ensures a consistent and proportional logo size */
+    vertical-align: middle;
+    object-fit: contain; /* Ensures the logo fits properly without distortion */
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header span {
+    margin-left: 10px; /* Adds spacing between the logo and text */
+}
+
+/* Path: ../../css/common_functionalities/edit_project.css */
